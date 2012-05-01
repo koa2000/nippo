@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  bigin: 2012-05-01 15:14:03
+  quit: 2012-05-01 15:14:03
+  p_name: MyString
+  issue: MyString
+  time: 2012-05-01 15:14:03
+
+two:
+  name: MyString
+  bigin: 2012-05-01 15:14:03
+  quit: 2012-05-01 15:14:03
+  p_name: MyString
+  issue: MyString
+  time: 2012-05-01 15:14:03

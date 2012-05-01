@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @list.name
+%p
+  %b Bigin:
+  = @list.bigin
+%p
+  %b Quit:
+  = @list.quit
+%p
+  %b P name:
+  = @list.p_name
+%p
+  %b Issue:
+  = @list.issue
+%p
+  %b Time:
+  = @list.time
+
+= link_to 'Edit', edit_list_path(@list)
+\|
+= link_to 'Back', lists_path

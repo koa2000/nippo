@@ -1,0 +1,29 @@
+%h1 日報
+
+%table
+  %tr
+    %th 名前
+    %th 出勤時間
+    %th 退勤時間
+    %th プロジェクト名
+    %th コメント
+    %th 時間
+    %th
+    %th
+    %th
+
+  - @lists.each do |list|
+    %tr
+      %td= list.name
+      %td= list.bigin
+      %td= list.quit
+      %td= list.p_name
+      %td= list.issue
+      %td= list.time
+      %td= link_to 'Show', list
+      %td= link_to 'Edit', edit_list_path(list)
+      %td= link_to 'Destroy', list, :confirm => 'Are you sure?', :method => :delete
+
+%br
+
+= link_to 'New List', new_list_path
